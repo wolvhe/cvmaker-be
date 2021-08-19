@@ -2,12 +2,12 @@ const express = require('express');
 const { isValidObjectId } = require('mongoose');
 var router = express.Router();
 
-var {Employee} = require('../models/info');
+var {Info} = require('../models/info');
 
 
 router.get('/', async(req, res) => {
     try {
-        const data = await Employee.find({ })
+        const data = await Info.find({ })
         res.send(data)
     } catch (err) {
         console.error(err.message)
@@ -15,7 +15,7 @@ router.get('/', async(req, res) => {
 });
 
 router.post('/', async(req, res) => {
-    var emp = new Employee({
+    var emp = new Info({
         fname: req.body.fname,
         lname: req.body.lname,
         email: req.body.email,

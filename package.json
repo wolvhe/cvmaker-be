@@ -8,7 +8,6 @@
   },
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wolvhe/cvmaker-be.git"
@@ -18,8 +17,6 @@
   },
   "homepage": "https://github.com/wolvhe/cvmaker-be#readme",
   "description": "",
-=======
->>>>>>> be8e4729ced8121c8c5aa9bf3304a3fd189481c0
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
