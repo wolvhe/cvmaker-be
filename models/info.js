@@ -41,10 +41,10 @@ var Experience = mongoose.model('experience', {
     // interests
     hobby: { type: String },
     // references
-    ref_companyName: { type: Number },
-    ref_contactPerson: { type: Number },
+    ref_companyName: { type: String },
+    ref_contactPerson: { type: String },
     ref_phoneNo: { type: Number }, 
-    ref_email: { type: Number },
+    ref_email: { type: String },
     // skills
     skill: { type: String },
     skill_startDate: { type: String },
