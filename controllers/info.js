@@ -7,7 +7,7 @@ var {Info} = require('../models/info');
 
 router.get('/', async(req, res) => {
     try {
-        const data = await Info.find({ })
+        const data = await Info.find().sort({_id:1}).limit(1);
         res.send(data)
     } catch (err) {
         console.error(err.message)

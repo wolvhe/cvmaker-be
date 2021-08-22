@@ -7,7 +7,7 @@ var {Experience} = require('../models/info');
 
 router.get('/', async(req, res) => {
     try {
-        const data = await Experience.find({ })
+        const data = await Experience.find().sort({_id: -1}).limit(1);
         res.send(data)
     } catch (err) {
         console.error(err.message)
