@@ -1,13 +1,22 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolvhe/cvmaker-be.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wolvhe/cvmaker-be/issues"
+  },
+  "homepage": "https://github.com/wolvhe/cvmaker-be#readme",
+  "description": "",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
