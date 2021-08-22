@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 var Info = mongoose.model('resume', {
+    photo: { type: String },
     fname: { type: String },
     lname: { type: String },
     email: { type: String },

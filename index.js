@@ -10,6 +10,7 @@ const port = process.env.PORT || 8080;
 var app = express();
 app.use(bodyParser.json());
 app.use(cors({ origin: "http://localhost:4200" }));
+// app.use(cors());
 app.listen(port, () => console.log("server started at port 3000"));
 
 app.use("/info", InfoController);
