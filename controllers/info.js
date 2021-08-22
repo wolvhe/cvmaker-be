@@ -16,6 +16,8 @@ router.get('/', async(req, res) => {
 
 router.post('/', async(req, res) => {
     var emp = new Info({
+
+        photo: req.body.photo,
         fname: req.body.fname,
         lname: req.body.lname,
         email: req.body.email,
