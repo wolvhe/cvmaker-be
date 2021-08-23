@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb+srv://neon:neon@cluster0.ero8t.mongodb.net/cvmaker', (err) => {
     if(!err)
-        console.log("mongodb connection success");
+        console.log("mongodb connection success on cloud");
     else
         console.log("connection failed : ", err);
 });
